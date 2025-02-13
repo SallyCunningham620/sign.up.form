@@ -4,6 +4,10 @@
 }
 
 @font-face {
+  font-family: 'LouisGeorgeCafe';
+  src: url(./fonts/Louis\ George\ Cafe.ttf);
+}
+@font-face {
   font-family: 'LouisGeorgeCafeBold';
   src: url(./fonts/Louis\ George\ Cafe\ Bold.ttf);
 }
@@ -92,6 +96,7 @@ html body{
 }
 
 .middle {
+  font-family: 'LouisGeorgeCafe', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -116,6 +121,29 @@ label {
   position: relative;
   width: 12rem;
   margin-bottom: 5px;
+}
+
+input {
+  font-family: 'LouisGeorgeCafeBold';
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: .9rem;
+  margin-top: 3px;
+}
+
+input:focus {
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100)
+}
+
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
 }
 
 button {

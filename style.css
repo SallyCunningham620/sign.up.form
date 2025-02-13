@@ -1,67 +1,133 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+@font-face {
+  font-family: 'Exo2' ;
+  src: url(./fonts/Exo2-VariableFont_wght.ttf);
+}
 
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  * {
-    margin: 0;
-  }
-  
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  #root, #__next {
-    isolation: isolate;
-  }
+@font-face {
+  font-family: 'LouisGeorgeCafeBold';
+  src: url(./fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
 
 /* styles*/
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+ 
+}
+
+html body{
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'LouisGeorgeCafeBold', sans-serif
+}
+
 .main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    width:100vw;
+}
+
+.background {
+  background: url(./images/daniel-janzen-SgNvZ0NowoY-unsplash.jpg);
+  flex-grow: 1;
+  position: relative;
+  width: 60vw;
+  min-width: 345px;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+#odin {
+  color:#ebebd8;
+  font-size: 3em;
+  font-family: 'Exo2', sans-serif;
+  text-shadow: rgb(26, 25, 24) 1px 0 5px;
+  margin-left: 10px;
+}
+
+#odin-logo {
+  width: 5rem;
+  padding: 10px;
+}
+
+.credit {
+  font-size: .8rem;
+  color: #ebebd8;
+  text-shadow: rgb(26, 25, 24) 1px 0 5px;
+  position: absolute;
+  bottom: 60px;
+  right: 5px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-.top,
-.bottom {
+    justify-content: center;
+    align-items: start;
+    width: 60vw;
+    height: 100vh;
+    flex-grow: 2;
     background-color: rgba(238, 223, 223, 0.767);
-
 }
 
-h3 {
-    max-width: 75ch;
-    
+.top {
+    padding: 0 2vw;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 0rem 0.8rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.bottom {
+  padding: 2vw;
+}
+form {
+  display: flex;
+  width: 60vw;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  position: relative;
+  width: 12rem;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: .8rem 1.3rem;
+  font-size: 1.3rem;
+  background-color: rgb(130, 209, 78);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+a {
+  text-decoration: none;
+  color: #6f7a55;
 }

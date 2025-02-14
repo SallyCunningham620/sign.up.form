@@ -27,7 +27,7 @@ html body{
   font-size: 1rem;
   padding: 0px;
   margin: 0px;
-  font-family: 'LouisGeorgeCafeBold', sans-serif
+  font-family: LouisGeorgeCafeBold, sans-serif
 }
 
 .main {
@@ -96,7 +96,7 @@ html body{
 }
 
 .middle {
-  font-family: 'LouisGeorgeCafe', sans-serif;
+  font-family: LouisGeorgeCafe, sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -124,7 +124,7 @@ label {
 }
 
 input {
-  font-family: 'LouisGeorgeCafeBold';
+  font-family: LouisGeorgeCafeBold;
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid rgb(224, 224, 224);
@@ -158,4 +158,11 @@ button {
 a {
   text-decoration: none;
   color: #6f7a55;
+}
+
+.error {
+  font-family:LouisGeorgeCafeBolf, sans-serif;
+  font-size: .7rem;
+  color: rgb(255, 69, 100);
+  position: absolute;
 }
